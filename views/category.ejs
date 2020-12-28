@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+<h1>Search results for <%=x %></h1>
+
+<div class="grid-container">
+  <% posts.forEach(function(post){      %>
+
+        <div class="card">
+        <img src="./images/<%= post.file_name %>" alt="Book Image" style="width:50%">
+        <h1><%=post.bname%></h1>
+        <p class="price">Rs.<%= post.price %></p>
+        <!-- <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p> -->
+        <p><button><a href="/posts/<%=post._id%>" class="btn btn-primary">Buy</a></button></p>
+      </div>
+
+  <%   })   ;    %>
+
+</div>

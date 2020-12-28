@@ -1,0 +1,53 @@
+<%- include("partials/header") -%>
+
+
+<div class="container" id="product-section">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/images/<%= imageName %>" alt="Book Image" style="width:50%">
+    </div>
+    <div class="col-md-6">
+      <h1><%= title %></h1>
+      <h3>Rs.<%= price %></h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <h5>Details</h5>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Author</td>
+            <td><%= authName %></td>
+          </tr>
+          <tr>
+            <td>Date of Publicaton</td>
+            <td><%= dateOfPub %></td>
+          </tr>
+          <tr>
+            <td>Seller Name</td>
+            <td><%= sellerName %></td>
+          </tr>
+          <tr>
+            <td>Contact No.</td>
+            <td><%= phNumber %></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><%= eAdd %></td>
+          </tr>
+        </tbody>
+      </table>
+      <form class="" action="/posts" method="post">
+           <button class="btn btn-primary" type="submit" name="button">Contact Seller</button>
+      </form>
+      <!-- <a href="https://mail.google.com/mail/u/0/#inbox"> <button  class="btn btn-primary">Contact Seller</button></a> -->
+    </div>
+
+    <!-- <a href="/"><button onclick="removeItemOnce()" class="btn btn-primary">Confirm</button></a> -->
+
+  </div><!-- end row -->
+</div><!-- end container -->
+
+
+<%- include("partials/footer") -%>

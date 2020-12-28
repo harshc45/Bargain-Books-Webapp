@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCCfcberSm-ERM3KziyMYd-XggVu8EbIgo",
+    authDomain: "book-selling-app-e30f8.firebaseapp.com",
+    databaseURL: "https://book-selling-app-e30f8.firebaseio.com",
+    projectId: "book-selling-app-e30f8",
+    storageBucket: "book-selling-app-e30f8.appspot.com",
+    messagingSenderId: "459302046357",
+    appId: "1:459302046357:web:ea1f979e0193a8990aa99c",
+    measurementId: "G-Y199RMXG83"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js"></script>
+<style>
+body{
+	background-image: url('Website-Design-Background(login).jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.button {
+  background-color: #1E90FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input
+{
+	width=100%;
+	 font-size: 20px;
+	
+}
+</style>
+</head>
+<body>
+<center>
+
+  <div id="login_div" class="main-div">
+<br><br><br>
+    <h2>Book Selling Application</h2>
+  <br><br><br>
+    <p><b>Email-ID </b>  <input type="email"  placeholder="Email..." id="email_field" height="100" width="100" /></p><br>
+    <p><b>Password </b>  <input type="password"  placeholder="Password..." id="password_field" height="150" width="150"/></p><br>
+
+    <button class="button " onclick="signup()" >SignUp</button>
+    <button  class="button" onclick="login()">Login</button>
+<br><br>
+  </div>
+</center>
+</body>
+</html>

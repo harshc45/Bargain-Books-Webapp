@@ -1,0 +1,30 @@
+<%- include("partials/login_header") -%>
+
+<div class="login-form">
+    <form action="/register" method="post">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="\images\logo.jfif" alt="" width="120" height="120">
+        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+      </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" name="username" required="required">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Full Name" name="fullName" required="required">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email Address" name="userEmail" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" name="password" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </div>
+
+    </form>
+    <p class="text-center"><a href="/login">Already have an account</a></p>
+</div>
+
+
+<%- include("partials/login_footer") -%>
