@@ -8,6 +8,7 @@ const path = require('path')
 const _ = require('lodash');
 const mongoose = require("mongoose");
 const mailgun = require("mailgun-js");
+require('dotenv').config();
 // const homeStartingContent = "";
 // const aboutContent = "";
 // const contactContent = "";
@@ -204,8 +205,8 @@ app.get('/posts/:postID', function(req, res) {
 
 
 app.post("/posts", function(req, res){
-    var api_key = 'e5cf21f9de915f8a50fca1881e84c518-e5da0167-719a81b7';
-    var domain = 'sandboxc40cd05d2425497e92ecd26b11b62d5f.mailgun.org';
+    var api_key = process.env.api_key;
+    var domain = process.env.domain;
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 
